@@ -4,11 +4,17 @@ Quick tool to deal with METADISE[1] GB scan results. The script takes a csv file
 with displacements as the x and y grid and energies as the grid. 
 
   dx dx dx dx dx dx dx dx dx dx 
+
 dy e  e  e  e  e  e  e  e  e  e 
+
 dy e  e  e  e  e  e  e  e  e  e 
+
 dy e  e  e  e  e  e  e  e  e  e 
+
 dy e  e  e  e  e  e  e  e  e  e 
+
 dy e  e  e  e  e  e  e  e  e  e
+
 dy e  e  e  e  e  e  e  e  e  e
 
 

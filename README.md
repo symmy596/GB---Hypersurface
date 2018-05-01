@@ -1,21 +1,7 @@
 #GB---Hypersurface
 
 Quick tool to deal with METADISE[1] GB scan results. The script takes a csv file as an input that is set out 
-with displacements as the x and y grid and energies as the grid. 
-
-  dx dx dx dx dx dx dx dx dx dx 
-
-dy  e   e   e   e   e   e   e   e   e   e 
-
-dy  e   e   e   e   e   e   e   e   e   e 
-
-dy  e   e   e   e   e   e   e   e   e   e 
-
-dy  e   e   e   e   e   e   e   e   e   e 
-
-dy  e   e   e   e   e   e   e   e   e   e
-
-dy  e   e   e   e   e   e   e   e   e   e
+with displacements as the x and y grid and energies as the grid (See grid.csv for further info). 
 
 
 This script consists of two functions;

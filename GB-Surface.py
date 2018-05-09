@@ -19,7 +19,7 @@ from matplotlib.ticker import LinearLocator, FormatStrFormatter
 import numpy as np
 
 
-def ReadGrid_V2(File):
+def ReadGrid(File):
     Data = np.genfromtxt(File, delimiter=',', dtype="float")
     
     X = Data[0]
@@ -38,35 +38,6 @@ def ReadGrid_V2(File):
     return X, Y, Grid 
 
 
-
-def ReadGrid_V1(File):
-    results = []
-    with open(File) as csvfile:
-        Data = csv.reader(csvfile, delimiter=',', quotechar=',')
-        for row in Data:
-            results.append(row)
-    Data = np.asarray(results)
-
-    X = np.array([])
-    Y = np.array([])
-    Grid = np.array([])
-
-    for i in range(0, Data.size):
-        if i == 0:
-            X = np.append(X, Data[i])
-        elif i != 0:
-            temp = np.asarray(Data[i])
-            Y = np.append(Y, temp[0])
-            temp = np.delete(temp, 0)
-            Grid = np.append(Grid, temp)
-
-    X = np.insert(X, 0, 0)
-    X = X.astype(float)
-    Y = Y.astype(float)
-    Grid = Grid.astype(float)
-    Grid = np.reshape(Grid, (Y.size, X.size))
-
-    return X, Y, Grid
 
 def GridPlot(X, Y, Grid):
     X, Y = np.meshgrid(X, Y)

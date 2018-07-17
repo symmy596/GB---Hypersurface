@@ -1,7 +1,7 @@
 # GB - Hypersurface
 
-#####Author - Adam Symington 
-#####Date - 17/07/2018
+##### Author - Adam Symington 
+##### Date - 17/07/2018
 
 Quick tool to convert METADISE[1] grain boundary scan results to energy surface plots. The script takes a csv file consisting of configuration energy as a function of x and y surface displacement and outputs an energy surface. 
 

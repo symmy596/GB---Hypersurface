@@ -53,7 +53,7 @@ def grid_plot(X, Y, Grid):
     plt.tick_params(labelsize=14)
     plt.tight_layout()
     plt.colorbar()
-    plt.show()
+    plt.savefig("Surface_Plot.png", dpi=600)
     plt.close()
 
 
